@@ -1,0 +1,17 @@
+{
+  "name": "TypeScript-Knex-Unit-of-Work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.20.1",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.7.2"
+  }
+}
