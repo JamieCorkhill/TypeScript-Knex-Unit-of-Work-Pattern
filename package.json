@@ -2,16 +2,25 @@
   "name": "TypeScript-Knex-Unit-of-Work",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./examples/simple-unit-of-work/src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:build": "tsc -w",
+    "start:run": "nodemon ./examples/simple-unit-of-work/build/index.js",
+    "start": "concurrently npm:start:*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^12.12.5",
     "knex": "^0.20.1",
+    "mysql": "^2.17.1",
+    "pg": "^7.12.1",
     "tsc": "^1.20150623.0",
     "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/knex": "^0.16.1",
+    "concurrently": "^5.0.0"
   }
 }
